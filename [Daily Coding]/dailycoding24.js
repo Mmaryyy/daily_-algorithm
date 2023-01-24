@@ -11,6 +11,9 @@ const isSubsetOf = function (base, sample) {
     console.log(sample)
 
     const findItemInSortedArr = (item, arr, from) => {
+      // base, sample 요소가 같을 때 base의 인덱스
+      // 없으면 -1 리턴
+      // -> 이 함수가 리턴하는 값은 순회할 때 인덱스 지정해주는 거
         console.log(item)
         console.log(from)
       for (let i = from; i < arr.length; i++) {
